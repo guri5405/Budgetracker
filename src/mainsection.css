@@ -1,0 +1,274 @@
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card{
+    flex: 1 1 calc(25% - 20px);
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 15px 15px 15px;
+}
+
+/* ══════════════════════════════════════════════════
+   MAIN SECTION
+   ══════════════════════════════════════════════════ */
+/* .main-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px 20px;
+} */
+ 
+/* ── KPI Grid ───────────────────────────────────── */
+/* Single definition — no duplicates */
+/* .kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 0 40px 20px;   /* ← 40px matches header */
+  
+/* }
+ 
+@media (max-width: 900px) {
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+} */
+/*  
+.kpi-card {
+  background: #f8f9fa;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+ 
+.kpi-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+} */
+ 
+/* .kpi-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+ 
+.kpi-value.green { color: #0D9488; }
+.kpi-value.red   { color: #EF4444; }
+ 
+.kpi-sub {
+  font-size: 0.78rem;
+  color: #9ca3af;
+} */
+ 
+/* ── Transaction Form ───────────────────────────── */
+/* .txn-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  padding: 0 40px 0;      ← 40px matches header
+  
+}
+  */
+/* .txn-form input,
+.txn-form select {
+  padding: 9px 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  background: #fff;
+  flex: 1;
+  min-width: 130px;
+  height: 40px;
+  box-sizing: border-box;
+} */
+ 
+/* .form-toggle {
+  display: flex;
+  background: #f3f4f6;
+  border-radius: 8px;
+  padding: 3px;
+  gap: 4px;
+  height: 40px;
+  flex-shrink: 0;
+} */
+/*  
+.form-toggle button {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.15s;
+  white-space: nowrap;
+}
+ 
+.form-toggle button.active-income  { background: #0D9488; color: #fff; }
+.form-toggle button.active-expense { background: #EF4444; color: #fff; }
+ 
+.submit-btn {
+  padding: 0 20px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: filter 0.15s;
+  white-space: nowrap;
+  flex-shrink: 0;
+} */
+ 
+/* .submit-btn.income  { background: #0D9488; color: #fff; }
+.submit-btn.expense { background: #EF4444; color: #fff; }
+.submit-btn:hover   { filter: brightness(1.1); } */ */
+/* ── Main section wrapper ──────────────────────────────────────
+   Same max-width + padding as App.css .container
+   ─────────────────────────────────────────────────────────── */
+.main-section {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 20px;     /* 20px sides = same as App.css .container */
+}
+
+/* ── KPI Grid ── */
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.kpi-card {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 18px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.kpi-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.kpi-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.kpi-value.green { color: #0D9488; }
+.kpi-value.red   { color: #EF4444; }
+
+.kpi-sub {
+  font-size: 0.78rem;
+  color: #9ca3af;
+}
+
+/* ── Transaction Form ── */
+.txn-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.txn-form input,
+.txn-form select {
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  background: #fff;
+  color: #111827;
+  flex: 1;
+  min-width: 120px;
+  box-sizing: border-box;
+}
+
+.form-toggle {
+  display: flex;
+  background: #e5e7eb;
+  border-radius: 8px;
+  padding: 3px;
+  gap: 3px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.form-toggle button {
+  padding: 0 16px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #6b7280;
+  transition: all 0.15s;
+  white-space: nowrap;
+  height: 100%;
+}
+
+.form-toggle button.active-income  { background: #0D9488; color: #fff; }
+.form-toggle button.active-expense { background: #EF4444; color: #fff; }
+
+.submit-btn {
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: filter 0.15s;
+}
+
+.submit-btn.income  { background: #0D9488; color: #fff; }
+.submit-btn.expense { background: #EF4444; color: #fff; }
+.submit-btn:hover   { filter: brightness(1.1); }
+ 
+/* ── Empty state ── */
+.empty-state {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  color: #9ca3af;
+}
+ 
+.empty-state span {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+ 
+.empty-state small {
+  font-size: 0.78rem;
+}
