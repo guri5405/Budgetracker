@@ -1,0 +1,33 @@
+/* h1{
+  text-align: left;
+  color:aqua;
+  text-shadow: 2px 2px 4px rgb(130, 194, 194);
+}
+
+.header{
+  background-color: rgb(58, 167, 167);
+  width: 100%;
+  border: 2px solid rgb(130, 194, 194);
+  border-radius: 10px;
+  padding: 20px;
+
+} */
+
+:root {
+  --primary: #3aa7a7;
+  --primary-light: #82c2c2;
+  --text-accent: #00eaff;
+}
+
+.page-title {
+  color:  #3aa7a7;
+  text-shadow: 2px 2px 4px var(--primary-light);
+  margin-bottom: 10px;
+}
+
+.header {
+  background: white;
+  border: 2px solid var(--primary-light);
+  border-radius: 10px;
+  padding: 15px;
+}
