@@ -1,0 +1,71 @@
+/* .graphs{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.graph{
+    flex: 1 1 calc(50% - 20px);
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 15px 15px 15px;
+} */
+ /* ───────── MAIN CONTAINER ───────── */
+.graphs {
+  display: flex;
+  flex-wrap: wrap;            /* ✅ allows wrapping */
+  gap: 20px;
+  width: 100%;
+}
+
+/* ───────── EACH GRAPH CARD ───────── */
+.graph {
+  flex: 1 1 calc(50% - 20px); /* ✅ 2 per row */
+  min-width: 300px;           /* ✅ prevents breaking */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* ───────── CHART WRAPPER ───────── */
+.chart-wrapper {
+  width: 100%;
+  height: 260px;
+  margin-top: 12px;
+}
+
+/* ───────── TABLET ───────── */
+@media (max-width: 1024px) {
+  .graph {
+    flex: 1 1 100%; /* ✅ full width */
+  }
+
+  .chart-wrapper {
+    height: 220px;
+  }
+}
+
+/* ───────── MOBILE ───────── */
+@media (max-width: 600px) {
+  .graphs {
+    gap: 15px;
+  }
+
+  .graph {
+    padding: 12px;
+  }
+
+  .chart-wrapper {
+    height: 200px;
+  }
+}
+
+@media (min-width: 350px) {
+    
+}
